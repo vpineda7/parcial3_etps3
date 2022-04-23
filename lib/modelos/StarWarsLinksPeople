@@ -1,0 +1,12 @@
+import 'package:flutter/material.dart';
+
+class StarWarsLinkPeople {
+  String id = "";
+  String url = "";
+  
+
+  StarWarsLinkPeople(id, url) {
+    this.id = id;
+    this.url = url;
+  }
+}
