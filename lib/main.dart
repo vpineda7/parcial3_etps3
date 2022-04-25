@@ -66,9 +66,50 @@ class _WebFlutterState extends State<WebFlutter> {
       title: 'Consumo Webservice',
       home: Scaffold(
           appBar: AppBar(
+            leading: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.auto_awesome_sharp)
+            ),
             title: Text('StartWars People API'),
           ),
-          body: futureBuilder),
+          //body: //futureBuilder),
+          body: new Builder(
+          builder: (BuildContext context) {
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                //search box
+                Padding(
+
+                  padding: const EdgeInsets.only(left: 25, right: 25, top: 5, bottom: 5),
+                  child: TextField(                    
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        borderSide: BorderSide.none,
+                      ),
+                      filled: true, 
+                      fillColor: Color.fromRGBO(239, 241, 231, 1),
+                      prefixIconColor:Colors.white,//Color.fromRGBO(239, 241, 231, 1) ,  
+                      hintText: 'Buscar',
+                      prefixIcon: Icon(Icons.search)
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 8,
+                  child: futureBuilder,
+                ),
+                // Expanded(
+                //   flex: 2,
+                //   child: Text("hello"),
+                //   ),
+
+              ],
+            );
+        }
+      )
+    )
     );
   }
 

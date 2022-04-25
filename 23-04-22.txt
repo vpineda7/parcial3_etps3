@@ -1,2 +1,21 @@
-- se copiÃ³repositori del creado por el ingeniero"fluteeapps" 
-
+git init 
+git add . 
+git commit -m "aplicaci¢n de parcialc funcional"
+git status
+curl -u vpineda7:%tokenGithub% https://api.github.com/user/repos -d "{\"name\":\"parcial3_etps3\"}"
+git remote add origin "https://github.com/vpineda7/ejeLoginFlutter_etps3"
+git remote add origin "https://github.com/vpineda7/parcial3_etps3"
+git remote remove origin "https://github.com/vpineda7/parcial3_etps3"
+git remote remove origin  "https://github.com/vpineda7/parcial3_etps3"
+git remote remove origin
+git remote -v
+git remote remove origin  "https://github.com/vpineda7/parcial3_etps3"
+git remote add origin "https://github.com/vpineda7/parcial3_etps3"
+git status
+git remote -v
+git push origin master
+git status
+doskey 
+doskey /history
+doskey /h
+doskey /h > 23-04-22.txt
